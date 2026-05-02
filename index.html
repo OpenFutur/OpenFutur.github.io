@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenFutur Docs</title>
+    <meta
+      name="description"
+      content="Documentation complète du projet OpenFutur / Agent Trading, incluant agent_trading, agent_trading_ia, architecture, APIs, workflows et roadmap."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#top">
+          <span class="brand-mark">OF</span>
+          <span class="brand-copy">
+            <strong>OpenFutur</strong>
+            <small>Project Documentation</small>
+          </span>
+        </a>
+
+        <div class="search-panel">
+          <label for="searchInput">Recherche rapide</label>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Architecture, MT5, SND, API..."
+            autocomplete="off"
+          />
+        </div>
+
+        <nav class="sidebar-nav">
+          <p class="nav-label">Navigation</p>
+          <div id="navList"></div>
+        </nav>
+
+        <div class="sidebar-foot">
+          <p>Statique HTML / CSS / JS</p>
+          <p>Conçu pour GitHub Pages</p>
+        </div>
+      </aside>
+
+      <main class="content" id="top">
+        <header class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow">OpenFutur Documentation Hub</span>
+            <h1>Documentation complète du projet Agent Trading</h1>
+            <p>
+              Une base documentaire moderne pour comprendre l’architecture,
+              les services, les flux métier, les APIs, MT5, le moteur IA et
+              la roadmap d’évolution du projet.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#project-overview">Commencer</a>
+              <a class="button button-secondary" href="#future-roadmap">Voir la roadmap</a>
+            </div>
+          </div>
+
+          <div class="hero-grid">
+            <article class="hero-card">
+              <span>Application</span>
+              <strong>agent_trading</strong>
+              <p>Next.js 16, Prisma, Better Auth, cockpit utilisateur.</p>
+            </article>
+            <article class="hero-card">
+              <span>Service IA</span>
+              <strong>agent_trading_ia</strong>
+              <p>FastAPI, ML, bridge MT5, auto-trader, CommandBus.</p>
+            </article>
+            <article class="hero-card">
+              <span>Execution</span>
+              <strong>MetaTrader 5</strong>
+              <p>Connexion Python MT5, historique, ordres, protection de positions.</p>
+            </article>
+            <article class="hero-card">
+              <span>Roadmap</span>
+              <strong>Entrées SND / SNR</strong>
+              <p>Retests, Key Levels, QML, QMPL, QMTR et refactor IA.</p>
+            </article>
+          </div>
+        </header>
+
+        <section class="stats-strip">
+          <article>
+            <strong>2</strong>
+            <span>services principaux</span>
+          </article>
+          <article>
+            <strong>20+</strong>
+            <span>endpoints web clés</span>
+          </article>
+          <article>
+            <strong>1</strong>
+            <span>hub documentaire unique</span>
+          </article>
+        </section>
+
+        <div id="docRoot" class="doc-root"></div>
+      </main>
+    </div>
+
+    <button class="mobile-menu" id="mobileMenuButton" aria-label="Ouvrir la navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
