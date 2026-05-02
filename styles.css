@@ -76,17 +76,15 @@ body::before {
   margin-bottom: 24px;
 }
 
-.brand-mark {
-  width: 52px;
-  height: 52px;
-  display: grid;
-  place-items: center;
+.brand-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  object-position: center;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(92, 224, 185, 0.16), rgba(29, 179, 220, 0.2));
-  border: 1px solid rgba(92, 224, 185, 0.26);
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  border: 1px solid rgba(92, 224, 185, 0.22);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
 }
 
 .brand-copy {
