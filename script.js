@@ -1,5 +1,37 @@
 const docSections = [
   {
+    id: "backtest-results",
+    group: "Performance",
+    title: "Résultats de Backtest",
+    badge: "Optimization",
+    intro: "Cette section documente les configurations optimales trouvées lors des simulations sur données réelles.",
+    blocks: [
+      {
+        type: "callout",
+        tone: "success",
+        title: "Configuration Optimale Gold (XAUUSDm)",
+        body: "Résultat obtenu le 14/05/2026 : +8.0% de profit net sur 6 mois avec 53 trades."
+      },
+      {
+        type: "code",
+        title: "Commande de reproduction",
+        code: "python run_backtest.py --symbol XAUUSDm --period 6mo --balance 1000 --risk 2 --sl-mult 3.0 --tp-rr 2.0 --min-confidence 0.80 --no-be"
+      },
+      {
+        type: "subsections",
+        items: [
+          {
+            heading: "Dernier Rapport",
+            paragraphs: [
+              "Le rapport complet de cette simulation est disponible localement dans le dossier du projet :",
+              "agent_trading_ia/backtest/140520261843/report.html"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     id: "project-overview",
     group: "Projet",
     title: "Vue d’ensemble du projet",
